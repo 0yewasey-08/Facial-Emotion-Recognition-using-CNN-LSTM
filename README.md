@@ -15,8 +15,12 @@ The main objectives of this project are:
 • To analyze model performance using accuracy and confusion matrix.
 
 5. Dataset Description
-The FER2013 dataset is a widely used benchmark dataset for facial emotion recognition. It consists of 35,887 grayscale facial images of size 48×48 pixels. The dataset is divided into training and test sets and includes seven emotion classes:
-Angry, Disgust, Fear, Happy, Sad, Surprise, and Neutral.
+FER2013 Dataset
+Image size: 48 × 48 grayscale
+Total images: 35,887
+Classes: 7 emotions
+Dataset link:
+👉 https://www.kaggle.com/datasets/msambare/fer2013
 
 The dataset is challenging due to low image resolution, noise, and class imbalance.
 
