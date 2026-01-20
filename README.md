@@ -14,7 +14,7 @@ The main objectives of this project are:
 • To train and evaluate the model on the FER2013 dataset.
 • To analyze model performance using accuracy and confusion matrix.
 
-5. Dataset Description
+4. Dataset Description
 FER2013 Dataset
 Image size: 48 × 48 grayscale
 Total images: 35,887
@@ -24,22 +24,22 @@ Dataset link:
 
 The dataset is challenging due to low image resolution, noise, and class imbalance.
 
-4. Methodology
+5. Methodology
 The proposed system follows a multi-stage pipeline consisting of data preprocessing, feature extraction, sequence learning, and classification.
 
-4.1 Data Preprocessing and Augmentation
+5.1 Data Preprocessing and Augmentation
 All images are resized to 48×48 pixels and normalized to the range [0,1]. Data augmentation techniques such as rotation, width and height shifting, zooming, shearing, and horizontal flipping are applied to increase dataset diversity and reduce overfitting.
 
-4.2 CNN Feature Extraction
+5.2 CNN Feature Extraction
 The Convolutional Neural Network (CNN) is used to extract spatial features from facial images. Multiple convolutional layers with ReLU activation functions are employed, followed by max pooling and batch normalization layers. Dropout is applied to improve generalization.
 
-4.3 LSTM for Feature Dependency Learning
+5.3 LSTM for Feature Dependency Learning
 After CNN-based feature extraction, the features are reshaped and passed to an LSTM layer. The LSTM network captures dependencies between extracted features, enhancing the model’s ability to recognize subtle emotional patterns.
 
-4.4 Classification and Optimization
+5.4 Classification and Optimization
 The model is trained using the Adam optimizer, which adaptively adjusts the learning rate for faster and more stable convergence. Categorical cross-entropy is used as the loss function.
 
-6. Model Architecture
+7. Model Architecture
 The proposed CNN–LSTM architecture consists of:
 • Three convolutional blocks (Conv2D + Batch Normalization + MaxPooling + Dropout)
 • A Flatten layer
@@ -49,10 +49,10 @@ The proposed CNN–LSTM architecture consists of:
 
 This hybrid architecture combines spatial and sequential learning capabilities.
 
-6. Training and Evaluation
+8. Training and Evaluation
 The model is trained for multiple epochs with a batch size of 64. Validation data is used to monitor performance and prevent overfitting. Model performance is evaluated using accuracy and confusion matrix on the test dataset.
 
-8. Results and Discussion
+9. Results and Discussion
 The CNN–LSTM model achieved improved accuracy compared to a baseline CNN model. Data augmentation and the Adam optimizer contributed to stable training and better generalization. The confusion matrix shows that emotions such as Happy and Surprise are recognized with higher accuracy, while Fear and Disgust remain more challenging due to visual similarities.
 
 10. Conclusion
